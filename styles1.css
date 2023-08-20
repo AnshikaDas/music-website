@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+#container1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #f0fbf7;
+}
+
+/*logo css*/
+#logo {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    font-size: 34px;
+    color: #01ce69;
+    font-weight: bolder;
+}
+
+/*navbar*/
+#navbar {
+    height: 60px;
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    border-radius: 20px;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    background-color: #01ce69;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li a:hover {
+    color: #01ce69;
+    border-bottom: 2px solid #01ce69;
+    width: 100%;
+}
+
+#navbar ul {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    background-color: #01ce69;
+    display: flex;
+    flex-direction: row;
+
+}
+
+navbar ul li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: #454847;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background: white;
+    color: #2d785c;
+    border-radius: 2px solid #fff;
+}
+
+#socialinks a {
+    text-decoration: none;
+    margin: 12px 0;
+
+}
+
+#sociallinks a i {
+    height: 50px;
+    width: 50px;
+
+    float: left;
+    margin: 10px 0px 6px 10px;
+    font-size: 40px;
+    color: #01ce69;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+#link1 {
+    position: absolute;
+
+     top: 0px;
+    left: 0px;
+    
+}
+
+#link2 {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+
+#link3 {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+
+#sociallinks a i:hover {
+    background: transparent;
+    color: #e3eae6ef;
+    border: 2px solid #01ce69;
+}
+
+#circle {
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background: #01ce6915;
+    position: absolute;
+    left: 10%;
+    bottom: 4%;
+}
+
+#sideimage {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    width: 500px;
+    /* Adjust this value to your desired size */
+    height: 500px;
+    /* Keep the same value as width for a perfect circle */
+    border-radius: 50%;
+    /* Makes the element a circle */
+    overflow: hidden;
+    /* Hides any content outside the circle */
+    margin: auto;
+
+
+}
+
+#sideimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*content css*/
+#content {
+    height: auto;
+    width: 700px;
+    position: absolute;
+    right: 11%;
+    top: calc(50% - 215px);
+}
+
+#content h2 {
+    font-size: 220px;
+    color: #01ce69;
+}
+
+::content p {
+    font-size: 18px;
+}
+
+#content button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    margin: 20px 250px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+    background: #01ce69;
+    color: #454847;
+    cursor: pointer;
+}
+
+#content button:hover {
+    color: #2d785c;
+    border: 2px solid #01ce69;
+    background: transparent;
+}
+
+
+#container button {
+    height: 50px;
+    width: 150px;
+    bottom: 50%;
+    border: none;
+    border-radius: 70px;
+    outline: none;
+    background: #01ce69;
+    color: #454847;
+    margin: 600px 70px 20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#container button:hover {
+    color: #2d785c;
+    border: 2px solid #01ce69;
+    border-radius: 70px;
+    background: transparent;
+}
+
+#container input {
+    height: 50px;
+    width: 250px;
+    margin: 5px;
+    padding: 20px 20px;
+    border: 2px solid #01ce69;
+    border: 2px solid;
+    background: #ffffff;
+    color: #454847;
+    margin: 600px 20px 20px 600px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#container audio {
+   position: absolute;
+   top: 520px;
+   left:550px;
+}
+
+#container ul{
+    width: 450px;
+    height: 200px;
+    overflow: auto;
+    padding: 20px 20px;
+    margin: 5px 20px 20px 600px;
+    background-color: #01ce6915;
+}
+
+
+/*animated music icon*/
+#music {
+    background: #01ce69;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    right: 20%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    border: 2px solid #01ce69;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+    0%, 100%{
+        background: #01ce69;
+        color: #fff;
+        right: 10%;
+    }
+    50%{
+        background: #01ce6900;
+        color: #01ce69;
+        right: 25%;
+    }
+}
